@@ -1,0 +1,33 @@
+.comment{
+    border: 3px solid black;
+    border-radius: 1rem;
+    padding: 2rem 1rem 2rem 1rem;
+    margin: 2rem 0 2rem 0;
+}
+
+.comment-head{
+    display: flex;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.data{
+    color: gray;
+    font-style: italic;
+}
+
+.adressees{
+    color: gray;
+    font-style: italic;
+    text-align: right;
+}
+
+.comment-buttons{
+    display: flex;
+}
+
+.container form{
+    margin: 10px 10px 0 0;
+}

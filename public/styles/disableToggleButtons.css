@@ -1,0 +1,8 @@
+#toggler{
+    background: lightgray;
+    transition: background 0.2s, border 0.2s;
+}
+#toggler:hover{
+    background: #f1cb99;
+    border: 2px solid #51050F;
+}

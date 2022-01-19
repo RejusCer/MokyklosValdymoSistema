@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #E5DCC3;
+    font-family: sans-serif;
+}
+
+
+.loginbox{
+    width: 320px;
+    height: 440px;
+    background-color: #F78812;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"], input[type="email"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #51050F;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+    
+}
+
+.chose-type{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.login_type{
+    display: inline-flex;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    color: black;
+}
+.radio_input{
+    display: none;
+}
+.radio_input:checked + .radio_label{
+    background: #51050F;
+    color: white;
+}
+.radio_label{
+    padding: 8px 14px;
+    background: #ffc107;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.radio_label:not(:last-of-type){
+    border-right: 1px solid #51050F;
+}
+.radio_label:hover{
+    background: #F78812;
+}
+
+.text-danger{
+    color: #a00f22 !important;
+}

@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    /* position: relative; */
+    min-height: 100vh;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+ul{
+    padding: 0;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #E5DCC3;
+    height: 100%;
+    width: 240px;
+    padding: 6px 14px;
+}
+.sidebar .logo_content .logo{
+    color: #000;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+}
+.logo_content .logo i{
+    font-size: 28px;
+    margin-right: 5px;
+}
+.logo_content .logo .logo_name{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.sidebar .profile_content{
+    background-color: #f1cb99;
+    color: #000;
+    border-radius: 50px;
+    margin-bottom: 16px;
+}
+.sidebar .profile_content .profile_details{
+    display: flex;
+    padding: 8px 0;
+    transition: all 0.4s ease;
+}
+.sidebar .profile_content .profile_details::before{
+    --scale: 0;
+    
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 105%;
+    width: max-content;
+    background-color: #f3e8d9;
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: 4px;
+    transform: scale(var(--scale));
+    transform-origin: left center;
+    transition: 0.1s transform;
+}
+.sidebar .profile_content .profile_details:hover::before{
+    --scale: 1;
+}
+.sidebar .profile_content .profile_details #user_logo{
+    font-size: 24px;
+    height: 50px;
+    min-width: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+/* .sidebar .profile_content .profile_details .name_job{
+    
+} */
+
+.sidebar .profile_content .profile_details .name_job .name{
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.sidebar .profile_content .profile_details .name_job .job{
+    font-size: 12px;
+    font-style: italic;
+}
+.sidebar .profile_content .profile_details .name_job .job #role{
+    font-weight: 700;
+}
+
+
+.sidebar #btn{
+    position: absolute;
+    columns: #000;
+    left: 90%;
+    top: 6px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+}
+.sidebar ul{
+    margin-top: 20px;
+}
+.sidebar ul li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 5px;
+    list-style-type: none;
+    line-height: 50px;
+}
+.sidebar ul li a{
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+}
+
+.sidebar ul li a:hover{
+    color: #E5DCC3;
+    background-color: #fff;
+}
+.sidebar ul li .logout:hover{
+    color: #E5DCC3;
+    background-color: #e9653c;
+}
+.sidebar ul li a i{
+    height: 50px;
+    min-width: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+.home_content{
+    margin: 3rem;
+    margin-left: calc(240px + 3rem);
+}
+
+@media (max-width: 992px){
+    .sidebar{
+        width: 78px;
+    }
+    .logo_content .logo .logo_name{
+        opacity: 0;
+    }
+    .links_name{
+        opacity: 0;
+        line-height: 0;
+    }
+
+    .sidebar .profile_content .profile_details .name_job{
+        opacity: 0;
+        line-height: 0;
+    }
+
+    .home_content{
+        margin-left: calc(78px + 3rem);
+    }
+}
+
+
+
+
+
+
+
+.sidebar ul li button{
+    background-color: #E5DCC3;
+    color: #000;
+    border: none;
+    text-align: left;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    display: block;
+    width: 100%;
+}
+
+.sidebar ul li form i{
+    height: 50px;
+    min-width: 50px;
+    line-height: 50px;
+    text-align: center;
+}

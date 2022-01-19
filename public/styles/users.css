@@ -1,0 +1,42 @@
+.head{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.head p {
+    display: flex;
+    margin: 0;
+}
+
+.users_table{
+    background-color: #E5DCC3;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 100%;
+}
+td form {
+    margin: 0 0.5rem 0 0.5rem;
+    display: inline-flex;
+}
+
+
+@media (max-width: 992px){
+    table thead{
+        display: none;
+    }
+
+    table, table tbody, table tr, .table td{
+        display: block;
+        width: 100%;
+    }
+    tbody tr{
+        border-bottom: black solid 1px;
+        margin-bottom: 1rem;
+    }
+    tbody .btn{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px){
+
+}
